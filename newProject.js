@@ -1,21 +1,21 @@
 // FIZZBUZZ
 
-function fizzbuzz() {
+// function fizzbuzz() {
 
-    for(var i = 1; i <= 100; i++) {
-         output = '';
+//     for(var i = 1; i <= 100; i++) {
+//          output = '';
 
-        if(i % 3 === 0) { output += 'fizz'};
+//         if(i % 3 === 0) { output += 'fizz'};
 
-        if(i % 5 === 0) { output += 'buzz'};
+//         if(i % 5 === 0) { output += 'buzz'};
 
-        if(output === '') { output = i }
+//         if(output === '') { output = i }
 
-        console.log(output)
-    }
-    return output;
+//         console.log(output)
+//     }
+//     return output;
     
-}
+// }
 
 // fizzbuzz();
 
@@ -111,26 +111,106 @@ function fizzbuzz() {
 // console.log(numbers);
 
 
-const person = {
-    firstName: 'lou',
-    lastName: 'Celestin',
-    age: 31,
-    email: 'lou@gmail.com',
-    hobbies: ['movies', 'sports'],
-    address: {
-        city: 'charlotte',
-        state: 'NC',
-    },
-    getBirthYear: function() {
-        return 1988;
-    }
+// const person = {
+//     firstName: 'lou',
+//     lastName: 'Celestin',
+//     age: 31,
+//     email: 'lou@gmail.com',
+//     hobbies: ['movies', 'sports'],
+//     address: {
+//         city: 'charlotte',
+//         state: 'NC',
+//     },
+//     getBirthYear: function() {
+//         return 1988;
+//     }
 
+// }
+
+// let val;
+
+// val = person;
+// val = person.firstName;
+// val = person. address.city;
+
+// console.log(val);
+
+// SWITCHES
+
+// const color = 'red';
+
+// switch(color) {
+//     case 'red':
+//         console.log('color is red');
+//         break;
+//     case 'blue':
+//         console.log('color is blue');
+//         break;
+//     case 'green':
+//         console.log('yes it is green');
+// }
+// let day;
+
+// switch(new Date().getDay()) {
+//     case 0:
+//         day = "Sunday";
+//         break;
+//     case 1:
+//         day = "Monday";
+//         break;
+//     case 2:
+//         day = "Tuesday";
+//         break;
+//     case 3:
+//         day = "Wednesday";
+//         break;
+//     case 4:
+//         day = "Thursday";
+//         break;
+//     case 5:
+//         day = "Friday";
+//         break;
+//     case 6:
+//         day = "Saturday";
+//         break;
+// }
+
+// console.log(`Today is ${day}.`);
+
+// FUNCTION
+
+// function declaration
+
+// function greet(firstName = ' mike', lastName = ' black') {
+//     return `Hello ${firstName} ${lastName}, welcome back.`
+// }
+
+// console.log(greet('Lou', 'Celestin'))
+
+// // function expressions
+
+// const square = function(x=3){
+//     return x*x
+// };
+
+// console.log(square(9))
+
+// immediately Invoke Function Expressions - IIFEs
+
+// (function(){
+//     console.log('iife ran')
+// })();
+
+// (function(name){
+//     console.log('Hello ' + name)
+// })('Lou');
+
+const todo = {
+    add: function(){
+        console.log('Add to do..')
+    }
 }
 
-let val;
+todo.add();
 
-val = person;
-val = person.firstName;
-val = person. address.city;
 
-console.log(val);
