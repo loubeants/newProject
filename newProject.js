@@ -205,12 +205,30 @@
 //     console.log('Hello ' + name)
 // })('Lou');
 
-const todo = {
-    add: function(){
-        console.log('Add to do..')
+// const todo = {
+//     add: function(){
+//         console.log('Add to do..')
+//     },
+//     edit: function(id){
+//         console.log(`Edit todo ${id}`)
+//     }  
+// }
+// todo.delete = function(){
+//     console.log('Delete todo ...')
+// }
+
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+// FOR LOOP
+
+for(let i = 0; i < 10; i++){
+    // console.log('Number ' + i);
+    if(i = 2) {
     }
+    console.log(' Number ' + i + ' is my favorite number')
 }
 
-todo.add();
 
 
