@@ -223,12 +223,19 @@
 
 // FOR LOOP
 
-for(let i = 0; i < 10; i++){
+for(let i = 0; i <= 10; i++){
     // console.log('Number ' + i);
-    if(i = 2) {
+    if(i === 2) {
+        console.log(' Number 2 is my favorite number');
+        continue;
     }
-    console.log(' Number ' + i + ' is my favorite number')
+      console.log('number ' + i)
 }
 
+// let val;
+
+// val = Math.floor(Math.random()* 50 + 1);
+
+// console.log(val);
 
 
