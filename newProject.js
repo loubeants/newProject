@@ -221,16 +221,18 @@
 // todo.edit(22);
 // todo.delete();
 
+
+
 // FOR LOOP
 
-for(let i = 0; i <= 10; i++){
-    // console.log('Number ' + i);
-    if(i === 2) {
-        console.log(' Number 2 is my favorite number');
-        continue;
-    }
-      console.log('number ' + i)
-}
+// for(let i = 0; i <= 10; i++){
+//     // console.log('Number ' + i);
+//     if(i === 2) {
+//         console.log(' Number 2 is my favorite number');
+//         continue;
+//     }
+//      else{console.log('number ' + i)} 
+// }
 
 // let val;
 
@@ -238,4 +240,35 @@ for(let i = 0; i <= 10; i++){
 
 // console.log(val);
 
+
+
+// WHILE LOOP
+
+// let i = 0;
+
+// while (i < 10) {
+//     console.log('number ' + i)
+//     i++
+// }
+
+
+// DO WHILE
+// let i = 254;
+
+// do {
+//     console.log('number ' + i);
+//     i++;
+// }
+// while (i < 10);
+
+
+const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
+
+// for(let i = 0; i < cars.length; i++) {
+//     console.log(cars[i])
+// }
+
+cars.forEach(function(i){
+    console.log(i)
+})
 
