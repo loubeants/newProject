@@ -244,31 +244,39 @@
 
 // WHILE LOOP
 
-// let i = 0;
+const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
 
-// while (i < 10) {
-//     console.log('number ' + i)
-//     i++
-// }
+let i = 0;
+
+while(i < cars.length ){
+    console.log(cars[3]);
+    break
+    i++;
+}
+
+
+
 
 
 // DO WHILE
-// let i = 254;
 
-// do {
-//     console.log('number ' + i);
-//     i++;
-// }
-// while (i < 10);
+let i = 0;
+
+do{}
 
 
-const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
+// const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
 
-// for(let i = 0; i < cars.length; i++) {
-//     console.log(cars[i])
-// }
+// // for(let i = 0; i < cars.length; i++) {
+// //     console.log(cars[i])
+// // }
 
-cars.forEach(function(i){
-    console.log(i)
-})
+// // cars.forEach(function(i){
+// //     console.log(i)
+// // })
+
+// cars.forEach((i => {
+//     console.log(i)
+// }))
+
 
