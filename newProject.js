@@ -244,25 +244,23 @@
 
 // WHILE LOOP
 
-const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
+// const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
 
-let i = 0;
+// let i = 0;
 
-while(i < cars.length ){
-    console.log(cars[3]);
-    break
-    i++;
-}
-
+// while(i < cars.length ){
+//     console.log(cars[3]);
+//     break
+//     i++;
+// }
 
 
 
 
 // DO WHILE
 
-let i = 0;
 
-do{}
+
 
 
 // const cars = ['Ford', 'Benz', 'BMW', 'Toyota'];
@@ -278,5 +276,42 @@ do{}
 // cars.forEach((i => {
 //     console.log(i)
 // }))
+
+// let i = 100; 
+
+
+// do {
+//     console.log('this is a' + [i])
+//     i++
+// }
+
+// while (i < 10)
+
+// MAP
+// const users = [
+//     {id: 1, name:'Lou'},
+//     {id: 2, name:'Sadia'},
+//     {id: 3, name:'Eli'},
+//     {id: 4, name:'Ezra'},
+// ];
+
+// const ids = users.map(function(user){
+//    return user.id
+// });
+
+// console.log(ids)
+
+const user = {
+    firstName: 'Lou',
+    lastName: 'Celestin',
+    age: 31,
+};
+
+for(let x in user){
+    console.log(`${x} : ${user[x]}`)
+}
+
+
+
 
 
