@@ -328,6 +328,11 @@
 //     console.log("NO!!");
 // }
 
+let val;
 
 
+val = window.outerHeight;
+val = window.innerWidth;
+val = window.screenX;
 
+console.log(val);
