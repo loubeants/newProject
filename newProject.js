@@ -311,10 +311,22 @@
 //     console.log(`${x} : ${user[x]}`)
 // }
 
+// WINDOW METHODS / OBJECTS / PROPERTIES
 
+// alert
+// alert('hello world');
 
-// ROCK PAPER SCISSORS
+// prompt
+// const input = prompt();
+// alert(input);
+// console.log(input);
 
+// confirm 
+// if(confirm("are you sure?")) {
+//     console.log('YES');
+// }else{
+//     console.log("NO!!");
+// }
 
 
 
