@@ -301,15 +301,19 @@
 
 // console.log(ids)
 
-const user = {
-    firstName: 'Lou',
-    lastName: 'Celestin',
-    age: 31,
-};
+// const user = {
+//     firstName: 'Lou',
+//     lastName: 'Celestin',
+//     age: 31,
+// };
 
-for(let x in user){
-    console.log(`${x} : ${user[x]}`)
-}
+// for(let x in user){
+//     console.log(`${x} : ${user[x]}`)
+// }
+
+
+
+// ROCK PAPER SCISSORS
 
 
 
