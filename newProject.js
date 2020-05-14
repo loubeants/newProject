@@ -334,5 +334,6 @@ let val;
 val = window.outerHeight;
 val = window.innerWidth;
 val = window.screenX;
+val = window.location
 
 console.log(val);
