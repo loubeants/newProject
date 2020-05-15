@@ -338,4 +338,15 @@
 
 // console.log(val);
 
-const items = document.getElementById()
+
+let val;
+
+val = document;
+val = document.all;
+val = document.all[5];
+val = document.all.length;
+val = document.head;
+val = document.domain;
+val = document.contentType;
+
+console.log(val)
