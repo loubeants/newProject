@@ -328,12 +328,14 @@
 //     console.log("NO!!");
 // }
 
-let val;
+// let val;
 
 
-val = window.outerHeight;
-val = window.innerWidth;
-val = window.screenX;
-val = window.location
+// val = window.outerHeight;
+// val = window.innerWidth;
+// val = window.screenX;
+// val = window.location
 
-console.log(val);
+// console.log(val);
+
+const items = document.getElementById()
