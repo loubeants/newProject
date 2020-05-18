@@ -339,14 +339,31 @@
 // console.log(val);
 
 
-let val;
+// let val;
 
-val = document;
-val = document.all;
-val = document.all[5];
-val = document.all.length;
-val = document.head;
-val = document.domain;
-val = document.contentType;
+// val = document;
+// val = document.all;
+// val = document.all[5];
+// val = document.all.length;
+// val = document.head;
+// val = document.domain;
+// val = document.contentType;
+// val = document.forms;
 
-console.log(val)
+// val = document.links[0];
+// val = document.scripts;
+// val = document.scripts[2].getAttribute('src');
+
+// console.log(val)
+
+// documnet.getElementById()
+
+console.log(document.getElementById('task-title'));
+
+console.log(document.getElementById('task-title').id);
+console.log(document.getElementById('task-title').className);
+console.log(document.getElementById('task-title').className);
+
+document.getElementById('task-title').innerHTML = '<span style= "color:red">task list</span>'
+
+console.log(document.querySelector('#task-title'))
