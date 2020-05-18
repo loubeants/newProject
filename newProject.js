@@ -358,12 +358,12 @@
 
 // documnet.getElementById()
 
-console.log(document.getElementById('task-title'));
+// console.log(document.getElementById('task-title'));
 
-console.log(document.getElementById('task-title').id);
-console.log(document.getElementById('task-title').className);
-console.log(document.getElementById('task-title').className);
+// console.log(document.getElementById('task-title').id);
+// console.log(document.getElementById('task-title').className);
+// console.log(document.getElementById('task-title').className);
 
-document.getElementById('task-title').innerHTML = '<span style= "color:red">task list</span>'
+// document.getElementById('task-title').innerHTML = '<span style= "color:red">task list</span>'
 
-console.log(document.querySelector('#task-title'))
+// console.log(document.querySelector('#task-title'))
