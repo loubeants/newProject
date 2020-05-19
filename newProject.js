@@ -367,3 +367,21 @@
 // document.getElementById('task-title').innerHTML = '<span style= "color:red">task list</span>'
 
 // console.log(document.querySelector('#task-title'))
+
+// console.log(document.getElementById('logo').innerHTML='me and you');
+// console.log(document.body.innerHTML='wow');
+// console.log(document.documentElement='holy shit');
+
+
+// console.log(document.getElementById('about').innerHTML = document.getElementById('contact'));
+
+// console.log(document.getElementById('about').inner);
+
+// let parent = document.createElement('p');
+// let child = document.createTextNode('this is fucking awesome');
+// parent.appendChild(child);
+// let all = document.getElementById('about').appendChild(child);
+
+let items = document.getElementByClassId('main');
+console.log(items);
+items.style.color = 'red';
