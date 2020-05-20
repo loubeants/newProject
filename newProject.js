@@ -446,3 +446,22 @@
 // }
 
 
+// let myLot = ['beamer', 'bemz', 'bentley', 'nissan', 'toyota', 'tesla'];
+
+// for(let i = 0; i < myLot.length; i++) {
+//     console.log(myLot[i]);
+//     let car = myLot[i];
+
+//     if(car[0] === 'b' || car[0] ==='t'){
+//         console.log('it is luxury')
+//     }
+//     else if( car[0] !=='b') {
+//         console.log('its either the nissan or something else')
+//     }
+// }
+
+let userText = document.getElementById('user-text');
+
+document.onkeyup = function(event){
+    userText.textContent = event.key;
+}
