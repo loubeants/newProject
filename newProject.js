@@ -460,8 +460,10 @@
 //     }
 // }
 
-let userText = document.getElementById('user-text');
+// let userText = document.getElementById('user-text');
 
-document.onkeyup = function(event){
-    userText.textContent = event.key;
-}
+// document.onkeyup = function(event) {
+//     userText.textContent = event.key;
+// }
+
+// R P S
