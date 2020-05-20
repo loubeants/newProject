@@ -412,22 +412,37 @@
 
 // console.log(items);
 
-let likeSteak = confirm('do you like steak?');
+// let likeSteak = confirm('do you like steak?');
 
-if (likeSteak === true) {
-    document.write('here is a steak sandwich')
-} else {
-    document.write('Here\'s a tofu avocado sandwich')
-}
+// if (likeSteak === true) {
+//     document.write('here is a steak sandwich')
+// } else {
+//     document.write('Here\'s a tofu avocado sandwich')
+// }
 
-let birthYear = prompt('what is your birth year?')
+// let birthYear = prompt('what is your birth year?')
 
-if(birthYear < 2002) {
-    alert('here have a shot')
-}else if(birthYear > 2002) {
-    alert('no shots for you')
-}else{
-    alert('you just made it, have a shot')
-}
+// if(birthYear < 2002) {
+//     alert('here have a shot')
+// }else if(birthYear > 2002) {
+//     alert('no shots for you')
+// }else{
+//     alert('you just made it, have a shot')
+// }
+
+// let cars = ['benz', 'bmw', 'lex', 'tesla'];
+
+// for (let i = 0; i < cars.length; i++) {
+
+//     let car = cars[i]
+
+//     if(car[0]==='b'){
+//         alert('its the bnz or the beamer')
+//     }else if( car[0] === 't') {
+//         console.log('its the tesla')
+//     }else(console.log('its the lex'))
+
+//     console.log(cars[i]);
+// }
 
 
