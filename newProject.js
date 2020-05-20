@@ -382,6 +382,52 @@
 // parent.appendChild(child);
 // let all = document.getElementById('about').appendChild(child);
 
-let items = document.getElementByClassId('main');
-console.log(items);
-items.style.color = 'red';
+// let lis = document.getElementsByTagName('li');
+// console.log(lis[0]);
+// console.log(lis);
+// lis[0].style.color = 'red';
+// lis[2].textContent = 'this is Lou here getting it in';
+
+// // convert html collections to arra
+
+// lis = Array.from(lis)
+// lis.reverse();
+// console.log(lis)
+
+// QUERY SELECTOR
+
+// const items = document.querySelectorAll('ul li')
+
+// items.forEach(function(i, index){
+//     i.textContent = `${index}: hello`
+// });
+
+// const liOdd = document.querySelectorAll('li')
+// const liEven = document.querySelectorAll('li')
+
+// liEven.forEach(function(i, index){
+//     i.style.background = '#ccc';
+// });
+
+
+// console.log(items);
+
+let likeSteak = confirm('do you like steak?');
+
+if (likeSteak === true) {
+    document.write('here is a steak sandwich')
+} else {
+    document.write('Here\'s a tofu avocado sandwich')
+}
+
+let birthYear = prompt('what is your birth year?')
+
+if(birthYear < 2002) {
+    alert('here have a shot')
+}else if(birthYear > 2002) {
+    alert('no shots for you')
+}else{
+    alert('you just made it, have a shot')
+}
+
+
