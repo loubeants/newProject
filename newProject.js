@@ -471,5 +471,30 @@
 let computerChoices = ['r','p','s'];
 document.onkeyup = function(event){
    let userChoice = event.key;
-   console.log(userChoice);
+   let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+   console.log(computerGuess);
+   let wins = 0;
+   let losses = 0;
+   let draws= 0;
+   
+   if((userChoice === 'r') || (userChoice === 'p') || (userChoice === 's')) {
+       alert(`user pick ${userChoice}`)
+       alert(`computer pick ${computerGuess}`)
+       if((userChoice === 'p' && computerGuess === 'r') ||
+          (userChoice === 'r' && computerGuess === 's') || 
+          (userChoice === 's' && computerGuess === 'p')) {
+               alert('you win'); wins++
+          }
+          else if
+         ((userChoice === 'p' && computerGuess === 's') ||
+          (userChoice === 'r' && computerGuess === 'p') || 
+          (userChoice === 's' && computerGuess === 'r')) {
+             alert('you lose'); losses++
+          }else{
+              alert('it\'s a draw'); draws++
+          }
+       
+    }else(alert('Please Pick between R, P, S'));
+
+
 }
