@@ -526,15 +526,32 @@
 // };
 
 
-let favTVshows = [];
-let tvShow;
+// let favTVshows = [];
+// let tvShow;
 
-for(let i = 1; i < 4; i++) {
-    tvShow = prompt(`What is your # ${i} favorite TV show?`)
+// for(let i = 1; i < 4; i++) {
+//     tvShow = prompt(`What is your # ${i} favorite TV show?`)
 
-    favTVshows.push(tvShow);
+//     favTVshows.push(tvShow);
 
-    for(let f = 0; f < favTVshows.length; f++) {
-        alert(favTVshows[f])
-    }
+//     for(let f = 0; f < favTVshows.length; f++) {
+//         alert(favTVshows[f])
+//     }
+// }
+
+// let result = {
+//     0:0,
+//     1:0,
+//     2:0
+// };
+// for(let i = 0; i < 10000; i++) {
+//     let n = Math.floor(Math.random() * 3);
+//     result[n]++;
+// }
+// console.log(result);
+
+let counts;
+
+for(let c = 0; c < 1000; c+=15) {
+    console.log(c)
 }
