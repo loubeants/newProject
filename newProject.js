@@ -468,20 +468,24 @@
 
 // R P S
 
-let computerChoices = ['r','p','s'];
-document.onkeyup = function(event){
+    let computerChoices = ['r','p','s'];
+
+    let wins = 0;
+    let losses = 0;
+    let draws= 0;
+
+    let userChoiceText = document.getElementById('youpick');
+    let computerChoiceText = document.getElementById('computerpick');
+    let winCount = document.getElementById('wins');
+    let loseCount = document.getElementById('loses');
+    let drawCount = document.getElementById('draw');
+
+    document.onkeyup = function(event){
+
    let userChoice = event.key;
    let computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-   console.log(computerGuess);
-   let wins = 0;
-   let losses = 0;
-   let draws= 0;
-
-   let userChoiceText = document.getElementById('youpick');
-   let computerChoiceText = document.getElementById('computerpick');
-   let winCount = document.getElementById('wins')
-   let loseCount = document.getElementById('loses')
-   let drawCount = document.getElementById('draw')
+//    console.log(computerGuess);
+   
    
    if((userChoice === 'r') || (userChoice === 'p') || (userChoice === 's')) {
     //    alert(`user pick ${userChoice}`)
@@ -489,22 +493,34 @@ document.onkeyup = function(event){
        if((userChoice === 'p' && computerGuess === 'r') ||
           (userChoice === 'r' && computerGuess === 's') || 
           (userChoice === 's' && computerGuess === 'p')) {
+              wins++;
             //    alert('you win'); 
-            userChoiceText.textContent = `you chose: ${userChoice}`;
-            winCount.textContent = `Wins : ${wins++}`;
           }
           else if
          ((userChoice === 'p' && computerGuess === 's') ||
           (userChoice === 'r' && computerGuess === 'p') || 
           (userChoice === 's' && computerGuess === 'r')) {
+              losses++;
             //  alert('you lose'); 
-            computerChoiceText.textContent = `the computer chose: ${computerGuess}`
-             loseCount.textContent = `Losses : ${losses++}`;
           }else{
+              draws++;
             //   alert('it\'s a draw'); 
-             drawCount.textContent =` Draw :  ${draws++}`;
           }
+
        
+          userChoiceText.textContent = 'You chose: ' + userChoice;
+          winCount.textContent = 'Wins : ' + wins;
+          computerChoiceText.textContent = 'The computer chose: ' + computerGuess;
+          loseCount.textContent = 'Losses: ' + losses;
+          drawCount.textContent = 'Draw: ' + draws;
+      
+
     }else(alert('Please Pick between R, P, S'));
 
-}
+    // userChoiceText.textContent = `you chose: ${userChoice}`;
+    // winCount.textContent = `Wins : ${wins++}`;
+    // computerChoiceText.textContent = `the computer chose: ${computerGuess}`
+    // loseCount.textContent = `Losses : ${losses++}`;
+    // drawCount.textContent =` Draw :  ${draws++}`;
+
+};
