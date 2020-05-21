@@ -467,3 +467,9 @@
 // }
 
 // R P S
+
+let computerChoices = ['r','p','s'];
+document.onkeyup = function(event){
+   let userChoice = event.key;
+   console.log(userChoice);
+}
