@@ -476,25 +476,35 @@ document.onkeyup = function(event){
    let wins = 0;
    let losses = 0;
    let draws= 0;
+
+   let userChoiceText = document.getElementById('youpick');
+   let computerChoiceText = document.getElementById('computerpick');
+   let winCount = document.getElementById('wins')
+   let loseCount = document.getElementById('loses')
+   let drawCount = document.getElementById('draw')
    
    if((userChoice === 'r') || (userChoice === 'p') || (userChoice === 's')) {
-       alert(`user pick ${userChoice}`)
-       alert(`computer pick ${computerGuess}`)
+    //    alert(`user pick ${userChoice}`)
+    //    alert(`computer pick ${computerGuess}`)
        if((userChoice === 'p' && computerGuess === 'r') ||
           (userChoice === 'r' && computerGuess === 's') || 
           (userChoice === 's' && computerGuess === 'p')) {
-               alert('you win'); wins++
+            //    alert('you win'); 
+            userChoiceText.textContent = `you chose: ${userChoice}`;
+            winCount.textContent = `Wins : ${wins++}`;
           }
           else if
          ((userChoice === 'p' && computerGuess === 's') ||
           (userChoice === 'r' && computerGuess === 'p') || 
           (userChoice === 's' && computerGuess === 'r')) {
-             alert('you lose'); losses++
+            //  alert('you lose'); 
+            computerChoiceText.textContent = `the computer chose: ${computerGuess}`
+             loseCount.textContent = `Losses : ${losses++}`;
           }else{
-              alert('it\'s a draw'); draws++
+            //   alert('it\'s a draw'); 
+             drawCount.textContent =` Draw :  ${draws++}`;
           }
        
     }else(alert('Please Pick between R, P, S'));
-
 
 }
