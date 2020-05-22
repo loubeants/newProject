@@ -556,20 +556,54 @@
 //     console.log(c)
 // }
 
-let brands = ['nike', 'polo', 'adidas','prada'];
-let cars = ['benz', 'toyota', 'nissan', 'lexus'];
-let food = ['brocoli', 'spinash', 'manzana', 'banana'];
-let drinks = ['smoothie', 'beer', 'water', 'wine'];
+// let brands = ['nike', 'polo', 'adidas','prada'];
+// let cars = ['benz', 'toyota', 'nissan', 'lexus'];
+// let food = ['brocoli', 'spinash', 'manzana', 'banana'];
+// let drinks = ['smoothie', 'beer', 'water', 'wine'];
 
-function printArr(arr){
-    for(let i = 0; i < arr.length; i++) {
-        console.log(arr[i])
+// function printArr(arr){
+//     for(let i = 0; i < arr.length; i++) {
+//         console.log(arr[i])
+//     }
+//     console.log('---------------')
+// };
+// printArr(brands);
+// printArr(cars);
+// printArr(food);
+// printArr(drinks);
+
+// function adder(x, y, z){
+//     console.log(x + y + z)
+// };
+// adder(1,3,5);
+
+// function mukltipier(x,y,z){
+//     console.log(x*y*z)
+// };
+// mukltipier(3,9,8);
+
+// function isString(x,y,z){
+//     if(typeof x === 'string' && typeof y === 'string' && typeof z === 'string'){
+//         console.log('yup all strings')
+//     }
+//     else{
+//         console.log('not all are strings')
+//     }
+// };
+
+// isString('n',9,'o')
+
+// isString('yes', 'oh' , 'yup')
+
+
+function vowelChecker(x){
+    x = x.toLowercase();
+    if(x === 'a'|| x === 'e' || x === 'i' || x === 'o' || 'u') {
+        console.log('is vowel')
     }
-    console.log('---------------')
-};
-printArr(brands);
-printArr(cars);
-printArr(food);
-printArr(drinks);
-
-
+    else{
+        console.log('not a vowel')
+    };
+}
+vowelChecker('v');
+vowelChecker('o');
