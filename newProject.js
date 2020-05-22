@@ -550,8 +550,26 @@
 // }
 // console.log(result);
 
-let counts;
+// let counts;
 
-for(let c = 0; c < 1000; c+=15) {
-    console.log(c)
-}
+// for(let c = 0; c < 1000; c+=15) {
+//     console.log(c)
+// }
+
+let brands = ['nike', 'polo', 'adidas','prada'];
+let cars = ['benz', 'toyota', 'nissan', 'lexus'];
+let food = ['brocoli', 'spinash', 'manzana', 'banana'];
+let drinks = ['smoothie', 'beer', 'water', 'wine'];
+
+function printArr(arr){
+    for(let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+    console.log('---------------')
+};
+printArr(brands);
+printArr(cars);
+printArr(food);
+printArr(drinks);
+
+
