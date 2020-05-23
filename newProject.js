@@ -625,3 +625,52 @@
 //         console.log('not greater than five!')
 //     }
 // };
+
+
+// let LouCelestin = {
+//     fName: 'Lou',
+//     LName: 'Celestin',
+//     DOB:'09.22.88',
+//     city:'Charlotte',
+//     age: '30'
+// };
+
+// console.log(LouCelestin.fName);
+// console.log(LouCelestin.age);
+
+
+// the psychic game
+
+let computerChoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+let wins = 0;
+let losses = 0;
+let guessesLeft = 10;
+let yourGuesses = [];
+
+let winstext = document.getElementById('wins');
+let lossestext = document.getElementById('losses');
+let guessesLeftText = document.getElementById('guesses-left');
+let gussesText = document.getElementById('your-guesses');
+
+    let computerpick = computerChoice[Math.floor(Math.random() * computerChoice.length)];
+    console.log(computerpick);
+
+    document.onkeyup = function(event) {
+
+        let userPick = event.key;
+        yourGuesses = userPick.push;
+
+            if(userPick === computerpick) {
+                wins++;
+            }else{
+                guessesLeft--;
+            }
+
+            if(guessesLeft === 0) {
+                losses++;
+            } 
+        console.log(userPick);
+
+        
+    };
+
