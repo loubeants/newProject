@@ -596,14 +596,32 @@
 // isString('yes', 'oh' , 'yup')
 
 
-function vowelChecker(x){
-    x = x.toLowercase();
-    if(x === 'a'|| x === 'e' || x === 'i' || x === 'o' || 'u') {
-        console.log('is vowel')
-    }
-    else{
-        console.log('not a vowel')
-    };
-}
-vowelChecker('v');
-vowelChecker('o');
+// function vowelChecker(x){
+//     x = x.toLowercase();
+//     if(x === 'a'|| x === 'e' || x === 'i' || x === 'o' || 'u') {
+//         console.log('is vowel')
+//     }
+//     else{
+//         console.log('not a vowel')
+//     };
+// }
+// vowelChecker('v');
+// vowelChecker('o');
+
+// function adder(x,y,z){
+//     return x + y + z;
+// }
+
+// let result = adder(5,5,5);
+
+// console.log(result);
+
+// let numbs = [3, 4, 1, 5, 8, 9, 0, 5];
+
+// for(let i = 0; i < numbs.length; i++){
+//     if(numbs[i] > 5) {
+//         console.log(`this number ${numbs[i]} is greater than 5`);
+//     }else{
+//         console.log('not greater than five!')
+//     }
+// };
