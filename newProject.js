@@ -641,36 +641,79 @@
 
 // the psychic game
 
-let computerChoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-let wins = 0;
-let losses = 0;
-let guessesLeft = 10;
-let yourGuesses = [];
+// let computerChoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+// let wins = 0;
+// let losses = 0;
+// let guessesLeft = 10;
+// let yourGuesses = [];
 
-let winstext = document.getElementById('wins');
-let lossestext = document.getElementById('losses');
-let guessesLeftText = document.getElementById('guesses-left');
-let gussesText = document.getElementById('your-guesses');
+// let winsText = document.getElementById('wins');
+// let lossestext = document.getElementById('losses');
+// let guessesLeftText = document.getElementById('guesses-left');
+// let guessesText = document.getElementById('your-guesses');
 
-    let computerpick = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-    console.log(computerpick);
+// let computerpick = computerChoice[Math.floor(Math.random() * computerChoice.length)];
+// console.log(computerpick);
 
-    document.onkeyup = function(event) {
-
-        let userPick = event.key;
-        yourGuesses = userPick.push;
-
-            if(userPick === computerpick) {
-                wins++;
-            }else{
-                guessesLeft--;
-            }
-
-            if(guessesLeft === 0) {
-                losses++;
-            } 
-        console.log(userPick);
-
+// document.onkeyup = function(event) {
+//         let userPick = event.key;
+    
+//         yourGuesses.push(userPick);
         
-    };
+//         for(let i = 1; i < yourGuesses.length; i++){
+//             if(userPick === yourGuesses[i]){
+//                 alert('pick different letter')
+//             }
+//         }
 
+//             if(userPick === computerpick) {
+//                 wins++;
+//             }else{
+//                 guessesLeft--;
+//             }
+
+//             if(guessesLeft === 0) {
+//                 losses++;
+//             } 
+//         console.log(userPick);
+
+//         winsText.textContent = `Wins: ${wins}`;
+//         lossestext.textContent = `Losses: ${losses}`;
+//         guessesText.textContent = `Gusses Left: ${guessesLeft}`;
+//         guessesText.textContent = `Your guesses so far: ${yourGuesses}`;
+
+//     };
+
+
+// OBJECT AND METHODS!!
+
+let car = {
+    make: 'benz',
+    model: 'e-350',
+    color: 'black',
+    mileage: 70000,
+    isWorking: true,
+
+    driveToWork: function(){
+        alert(this.mileage);
+
+        this.mileage = this.mileage + 8; 
+
+        alert('new mileage: ' + this.mileage);
+    },
+
+    driveAroundTheWorld: function(){
+
+        alert('old mileage: ' + this.mileage)
+
+        this.mileage = this.mileage + 24000;
+
+        alert('New mileage: ' + this.mileage);
+        alert('car needs a tune up');
+
+        this.isWorking = false;
+    },
+
+};
+
+car.driveAroundTheWorld();
