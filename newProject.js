@@ -687,33 +687,73 @@
 
 // OBJECT AND METHODS!!
 
-let car = {
-    make: 'benz',
-    model: 'e-350',
-    color: 'black',
-    mileage: 70000,
-    isWorking: true,
+// let car = {
+//     make: 'benz',
+//     model: 'e-350',
+//     color: 'black',
+//     mileage: 70000,
+//     isWorking: true,
 
-    driveToWork: function(){
-        alert(this.mileage);
+//     driveToWork: function(){
+//         alert(this.mileage);
 
-        this.mileage = this.mileage + 8; 
+//         this.mileage = this.mileage + 8; 
 
-        alert('new mileage: ' + this.mileage);
-    },
+//         alert('new mileage: ' + this.mileage);
+//     },
 
-    driveAroundTheWorld: function(){
+//     driveAroundTheWorld: function(){
 
-        alert('old mileage: ' + this.mileage)
+//         alert('old mileage: ' + this.mileage)
 
-        this.mileage = this.mileage + 24000;
+//         this.mileage = this.mileage + 24000;
 
-        alert('New mileage: ' + this.mileage);
-        alert('car needs a tune up');
+//         alert('New mileage: ' + this.mileage);
+//         alert('car needs a tune up');
 
-        this.isWorking = false;
-    },
+//         this.isWorking = false;
+//     },
 
-};
+//     getTuneUp: function() {
+//         alert('car is ready to go')
+//         this.isWorking = true;
+//     },
 
-car.driveAroundTheWorld();
+//     honk: function() {
+//         alert('Honk! Honk!')
+//     }
+// };
+
+// car.driveAroundTheWorld();
+
+// document.onkeyup = function(event){
+//     let userKey = event.key;
+
+//     if(userKey === 'h'){
+//         car.honk();
+//     }else if (userKey === 'd'){
+//         car.driveAroundTheWorld()
+//     }else if( userKey === 'w'){
+//         car.isWorking
+//     }else{
+
+//     }
+// }
+
+// switch(userKey) {
+//     case 'h':
+//     case 'H':
+//         car.honk();
+//         break;
+//     case 'd':
+//     case 'D':
+//         car.driveToWork();
+//         break;
+//     default:
+//         alert('please press one of those buttons to play')
+// }
+
+
+
+
+
