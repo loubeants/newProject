@@ -776,3 +776,24 @@ function renderQuestion() {
     }
 }
 
+function updateScore() {
+    document.querySelector('#score').innerHTML = 'Score: ' + score;
+}
+
+renderQuestion();
+updateScore();
+
+document.onkeyup = function(event){
+    if(questionIndex === questions.length) {
+        return;
+    }
+    let userInput = event.key.toLowerCase();
+    
+    if(userInput === 't' || userInput === 'f') {
+        if(userInput === questions[questionIndex].a){
+            alert('correct');
+            score++;
+            updateScore();
+        }
+    }
+}
