@@ -755,5 +755,24 @@
 
 
 
+let questions = [
+    {q:'The sky is blue?',a:'t' },
+    {q:'Coding is rewarding?', a:'t'},
+    {q:'There are 300 days in a year?', a:'f'},
+    {q:'Reading is excercise for the brain?',a:'t'},
+    {q: 'Consistency if not the key to learning ne things', a:'f'}
+];
 
+let score = 0;
+let questionIndex = 0;
+
+function renderQuestion() {
+    if(questionIndex <= (questions.length - 1)) {
+        document.querySelector('#question').innerHTML = questions[questionIndex].q;
+    }
+    else {
+        document.querySelector('#questions').innerHTML = 'Game Over';
+        document.querySelector('#score').innerHTML = 'final Score: ' + score + 'out of ' + questionIndex;
+    }
+}
 
