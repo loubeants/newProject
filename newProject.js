@@ -771,7 +771,7 @@ function renderQuestion() {
         document.querySelector('#question').innerHTML = questions[questionIndex].q;
     }
     else {
-        document.querySelector('#questions').innerHTML = 'Game Over';
+        document.querySelector('#question').innerHTML = 'Game Over';
         document.querySelector('#score').innerHTML = 'final Score: ' + score + 'out of ' + questionIndex;
     }
 }
@@ -795,5 +795,10 @@ document.onkeyup = function(event){
             score++;
             updateScore();
         }
+        else {
+            alert('Wrong');
+        }
+        questionIndex++;
+        renderQuestion();
     }
 }
