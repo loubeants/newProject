@@ -755,50 +755,59 @@
 
 
 
-let questions = [
-    {q:'The sky is blue?',a:'t' },
-    {q:'Coding is rewarding?', a:'t'},
-    {q:'There are 300 days in a year?', a:'f'},
-    {q:'Reading is excercise for the brain?',a:'t'},
-    {q: 'Consistency if not the key to learning ne things', a:'f'}
-];
+// let questions = [
+//     {q:'The sky is blue?',a:'t' },
+//     {q:'Coding is rewarding?', a:'t'},
+//     {q:'There are 300 days in a year?', a:'f'},
+//     {q:'Reading is excercise for the brain?',a:'t'},
+//     {q: 'Consistency if not the key to learning ne things', a:'f'}
+// ];
 
-let score = 0;
-let questionIndex = 0;
+// let score = 0;
+// let questionIndex = 0;
 
-function renderQuestion() {
-    if(questionIndex <= (questions.length - 1)) {
-        document.querySelector('#question').innerHTML = questions[questionIndex].q;
-    }
-    else {
-        document.querySelector('#question').innerHTML = 'Game Over';
-        document.querySelector('#score').innerHTML = 'final Score: ' + score + 'out of ' + questionIndex;
-    }
-}
+// function renderQuestion() {
+//     if(questionIndex <= (questions.length - 1)) {
+//         document.querySelector('#question').innerHTML = questions[questionIndex].q;
+//     }
+//     else {
+//         document.querySelector('#question').innerHTML = 'Game Over';
+//         document.querySelector('#score').innerHTML = 'final Score: ' + score + 'out of ' + questionIndex;
+//     }
+// }
 
-function updateScore() {
-    document.querySelector('#score').innerHTML = 'Score: ' + score;
-}
+// function updateScore() {
+//     document.querySelector('#score').innerHTML = 'Score: ' + score;
+// }
 
-renderQuestion();
-updateScore();
+// renderQuestion();
+// updateScore();
 
-document.onkeyup = function(event){
-    if(questionIndex === questions.length) {
-        return;
-    }
-    let userInput = event.key.toLowerCase();
+// document.onkeyup = function(event){
+//     if(questionIndex === questions.length) {
+//         return;
+//     }
+//     let userInput = event.key.toLowerCase();
     
-    if(userInput === 't' || userInput === 'f') {
-        if(userInput === questions[questionIndex].a){
-            alert('correct');
-            score++;
-            updateScore();
-        }
-        else {
-            alert('Wrong');
-        }
-        questionIndex++;
-        renderQuestion();
+//     if(userInput === 't' || userInput === 'f') {
+//         if(userInput === questions[questionIndex].a){
+//             alert('correct');
+//             score++;
+//             updateScore();
+//         }
+//         else {
+//             alert('Wrong');
+//         }
+//         questionIndex++;
+//         renderQuestion();
+//     }
+// }
+
+let num;
+function numIntake(num) {
+    for(let i = 0; i < num; i ++){
+       return i+num[i]
     }
-}
+};
+
+console.log(numIntake(5));
