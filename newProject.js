@@ -803,11 +803,49 @@
 //     }
 // }
 
-let num;
-function numIntake(num) {
-    for(let i = 0; i < num; i ++){
-       return i+num[i]
-    }
-};
+// function numIntake(num) {
 
-console.log(numIntake(5));
+//     let result = 0;
+
+//     for(let i = 1; i <= num; i ++){
+//         result = result + i;
+
+//     }
+//     return result;
+// };
+
+// console.log(numIntake(2));
+// console.log(numIntake(4));
+// console.log(numIntake(10));
+
+// function numAdds(num) {
+
+//     let result = 0;
+
+//     for(let i = 1; i <=num; i++) {
+//         result = result + i;
+//     }
+//     return result;
+// };
+
+// console.log(numAdds(2));
+// console.log(numAdds(4));
+// console.log(numAdds(10));
+
+let drinkList = [
+    'coffee',
+    'juice',
+    'icecream',
+    'tea',
+    'milk',
+    'smoothie',
+    'jungle juice'
+];
+
+let targetDiv = document.getElementById('empty-div');
+
+for(let i = 0; i < drinkList.length; i++){
+    let newDrink = document.createElement('h2');
+    newDrink.textContent = drinkList[i];
+    targetDiv.appendChild(newDrink)
+}
