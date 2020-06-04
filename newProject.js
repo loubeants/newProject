@@ -856,31 +856,39 @@
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    let veganBurger = 0;
-    let avocadoBurger = 0;
-    let beyondBurger = 0;
+//     let veganBurger = 0;
+//     let avocadoBurger = 0;
+//     let beyondBurger = 0;
 
-    $('#click-me').on('click', function(){
-        alert('i\'ve been clicked' )
-    });
+//     $('#click-me').on('click', function(){
+//         alert('i\'ve been clicked' )
+//     });
 
-    $('#vegan-burger').on('click', function(){
+//     $('#vegan-burger').on('click', function(){
         
-        alert('you just ate a vegan burger')
-        veganBurger++;
-        alert('you just ate ' + veganBurger + ' vegan burger')
-    })
-    $('#avocado-burger').on('click', function(){
-        alert('you just ate an avocado burger')
-        avocadoBurger++;
-        alert('you just ate ' + avocadoBurger + ' avocado burger' )
-    })
-    $('#beyond-burger').on('click', function(){
-        alert('you just ate a beyond burger')
-        beyondBurger++;
-        alert('you just ate ' + beyondBurger + ' beyond Burger')
-    })
+//         alert('you just ate a vegan burger')
+//         veganBurger++;
+//         alert('you just ate ' + veganBurger + ' vegan burger')
+//     })
+//     $('#avocado-burger').on('click', function(){
+//         alert('you just ate an avocado burger')
+//         avocadoBurger++;
+//         alert('you just ate ' + avocadoBurger + ' avocado burger' )
+//     })
+//     $('#beyond-burger').on('click', function(){
+//         alert('you just ate a beyond burger')
+//         beyondBurger++;
+//         alert('you just ate ' + beyondBurger + ' beyond Burger')
+//     })
+
+// });
+$(document).ready(function(){
+
+    $('#random-button').on('click', function(){
+        let random = Math.floor(Math.random() * 1000) + 1;
+        $('#random-number').html(random);
+    });
 
 });
