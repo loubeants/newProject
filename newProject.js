@@ -832,20 +832,28 @@
 // console.log(numAdds(4));
 // console.log(numAdds(10));
 
-let drinkList = [
-    'coffee',
-    'juice',
-    'icecream',
-    'tea',
-    'milk',
-    'smoothie',
-    'jungle juice'
-];
+// let drinkList = [
+//     'coffee',
+//     'juice',
+//     'icecream',
+//     'tea',
+//     'milk',
+//     'smoothie',
+//     'jungle juice'
+// ];
 
-let targetDiv = document.getElementById('empty-div');
+// // let targetDiv = document.getElementById('empty-div');
 
-for(let i = 0; i < drinkList.length; i++){
-    let newDrink = document.createElement('h2');
-    newDrink.textContent = drinkList[i];
-    targetDiv.appendChild(newDrink)
-}
+// // for(let i = 0; i < drinkList.length; i++){
+// //     let newDrink = document.createElement('h2');
+// //     newDrink.textContent = drinkList[i];
+// //     targetDiv.appendChild(newDrink)
+// // }
+
+// for(let i = 0; i < drinkList.length; i++){
+//     $('#empty-div').append('<h1>' + drinkList[i] + '</h1>')
+// }
+
+$('#click-me').on('click', function(){
+    alert('i\'ve been clicked' )
+})
