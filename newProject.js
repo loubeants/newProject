@@ -854,6 +854,33 @@
 //     $('#empty-div').append('<h1>' + drinkList[i] + '</h1>')
 // }
 
-$('#click-me').on('click', function(){
-    alert('i\'ve been clicked' )
-})
+
+
+$(document).ready(function() {
+
+    let veganBurger = 0;
+    let avocadoBurger = 0;
+    let beyondBurger = 0;
+
+    $('#click-me').on('click', function(){
+        alert('i\'ve been clicked' )
+    });
+
+    $('#vegan-burger').on('click', function(){
+        
+        alert('you just ate a vegan burger')
+        veganBurger++;
+        alert('you just ate ' + veganBurger + ' vegan burger')
+    })
+    $('#avocado-burger').on('click', function(){
+        alert('you just ate an avocado burger')
+        avocadoBurger++;
+        alert('you just ate ' + avocadoBurger + ' avocado burger' )
+    })
+    $('#beyond-burger').on('click', function(){
+        alert('you just ate a beyond burger')
+        beyondBurger++;
+        alert('you just ate ' + beyondBurger + ' beyond Burger')
+    })
+
+});
