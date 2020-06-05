@@ -884,11 +884,43 @@
 //     })
 
 // });
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    $('#random-button').on('click', function(){
-        let random = Math.floor(Math.random() * 1000) + 1;
-        $('#random-number').html(random);
-    });
+//     // $('#random-button').on('click', function(){
+//     //     let random = Math.floor(Math.random() * 1000) + 1;
+//     //     $('#random-number').html(random);
+//     // });
 
-});
+
+// });
+
+// $(document).ready(function(){
+
+//     $('#lot-number').on('click', function(){
+
+//         let result = '';
+
+//         for(let i = 0; i < 9; i++){
+
+
+//             let digit = Math.floor(Math.random() * 9) + 1;
+//             result = result + digit;
+
+//         } 
+//         $('#random-num').prepend('<p>' + result + '<p>' +'<hr>');
+
+//     });
+// });
+
+
+function findMax(arr){
+    let maxNum = arr[0];
+
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > maxNum){
+            maxNum = arr[i];
+        }
+    }
+    return maxNum;
+};
+console.log(findMax([6,0,7,7,4,2,9,88]))
